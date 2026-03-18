@@ -4,12 +4,6 @@ A theme that brings the Notion product look and feel to shadcn/ui.
 
 This repository contains official theme tokens, styles, and example components used in Notion projects. It’s optimized for Notion’s own surfaces and for apps built with Notion’s agents and system of record, but it’s also available for anyone who wants to build Notion‑adjacent experiences.
 
-## Goals
-
-- Provide a consistent visual system for Notion products.
-- Make it easy for teams building with Notion’s agents and SOR to match Notion’s UI.
-- Stay close to the shadcn/ui ecosystem so you can use existing components with minimal changes.
-
 ## Usage
 
 1. Install the package:
