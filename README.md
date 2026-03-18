@@ -1,4 +1,4 @@
-  <img src="./assets/notion-logo.svg" alt="Notion logo" width="64" />
+  <img src="./notion-logo.svg" alt="Notion logo" width="64" />
 
 # Notion shadcn Theme
 
