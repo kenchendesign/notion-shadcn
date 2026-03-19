@@ -10,7 +10,7 @@ export default function FormsPage() {
   return (
     <div className="space-y-8">
       <div>
-        <h1 className="text-xl font-semibold">Forms</h1>
+        <h1 className="text-2xl font-semibold">Forms</h1>
         <p className="text-sm text-muted-foreground mt-1">Inputs, selects, checkboxes, and switches.</p>
       </div>
 

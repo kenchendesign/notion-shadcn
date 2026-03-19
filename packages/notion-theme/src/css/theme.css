@@ -400,3 +400,45 @@
   line-height: 20px;
   font-weight: 400;
 }
+
+/* ============================================================
+   Notion Semantic Utility Classes
+   Direct utilities wired to Notion tokens — avoids doubled
+   naming (border-border-*, bg-bg-*) while keeping correct
+   token mapping.
+   ============================================================ */
+
+/* Border colors — note: border-primary is intentionally omitted;
+   shadcn components use border-primary to mean the accent color
+   (via --color-primary), so we leave that to auto-generation. */
+@utility border-secondary { border-color: var(--border-color-secondary); }
+@utility border-strong { border-color: var(--border-color-strong); }
+@utility border-inverse { border-color: var(--border-color-inverse-primary); }
+@utility border-accent { border-color: var(--border-color-accent-primary); }
+
+/* Background colors */
+@utility bg-tertiary { background-color: var(--background-color-tertiary); }
+@utility bg-elevated { background-color: var(--background-color-elevated); }
+
+/* Text colors — note: text-primary is intentionally omitted;
+   shadcn components use text-primary to mean the accent color
+   (via --color-primary), so we leave that to auto-generation. */
+@utility text-secondary { color: var(--text-color-secondary); }
+@utility text-tertiary { color: var(--text-color-tertiary); }
+@utility text-disabled { color: var(--text-color-disabled); }
+@utility text-accent { color: var(--text-color-accent-primary); }
+@utility text-inverse { color: var(--text-color-inverse-primary); }
+
+/* ============================================================
+   Cascade override layer — fixes Tailwind v4's @theme inline
+   auto-generated utilities overriding @utility declarations.
+   Only includes utilities that: (1) are actually used with
+   Notion semantics, and (2) conflict with @theme inline
+   auto-generation from --color-* variables.
+   ============================================================ */
+
+@layer utilities {
+  /* border-secondary: used in layout; auto-gen from --color-secondary
+     would resolve to var(--secondary) (a background color) — wrong. */
+  .border-secondary { border-color: var(--border-color-secondary); }
+}

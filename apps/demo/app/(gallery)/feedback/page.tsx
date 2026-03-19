@@ -1,3 +1,4 @@
+"use client";
 import { Progress } from "@/components/ui/progress";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { TooltipProvider, Tooltip, TooltipTrigger, TooltipContent } from "@/components/ui/tooltip";
@@ -8,7 +9,7 @@ export default function FeedbackPage() {
   return (
     <div className="space-y-8">
       <div>
-        <h1 className="text-xl font-semibold">Feedback</h1>
+        <h1 className="text-2xl font-semibold">Feedback</h1>
         <p className="text-sm text-muted-foreground mt-1">Progress, tabs, and tooltips.</p>
       </div>
 

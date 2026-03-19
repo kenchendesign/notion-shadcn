@@ -19,18 +19,15 @@ export function SidebarNav() {
 
   return (
     <nav className="flex flex-col gap-0.5 px-3 py-4">
-      <p className="px-2 py-1 text-xs font-medium text-muted-foreground uppercase tracking-wider mb-1">
-        Components
-      </p>
       {sections.map((s) => (
         <Link
           key={s.href}
           href={s.href}
           className={cn(
-            "px-2 py-1.5 rounded-sm text-sm transition-colors",
+            "px-2 py-1.5 rounded-sm transition-colors",
             pathname === s.href
-              ? "bg-accent text-foreground font-medium"
-              : "text-muted-foreground hover:bg-accent hover:text-foreground"
+              ? "bg-accent font-medium"
+              : "hover:bg-accent"
           )}
         >
           {s.label}

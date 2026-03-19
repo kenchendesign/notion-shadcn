@@ -8,10 +8,9 @@ export default function GalleryLayout({
 }) {
   return (
     <div className="flex h-full">
-      <aside className="w-56 shrink-0 border-r border-border bg-sidebar flex flex-col">
-        <div className="px-5 py-4 border-b border-border">
-          <p className="text-sm font-semibold text-foreground">notion-shadcn</p>
-          <p className="text-xs text-muted-foreground mt-0.5">Component gallery</p>
+      <aside className="w-56 shrink-0 border-r border-secondary flex flex-col">
+        <div className="px-5 py-4">
+          <p className="font-semibold text-foreground">notion-shadcn</p>
         </div>
         <SidebarNav />
       </aside>

@@ -9,7 +9,7 @@ export default function SurfacesPage() {
   return (
     <div className="space-y-8">
       <div>
-        <h1 className="text-xl font-semibold">Surfaces</h1>
+        <h1 className="text-2xl font-semibold">Surfaces</h1>
         <p className="text-sm text-muted-foreground mt-1">Cards, badges, separators, and avatars.</p>
       </div>
 

@@ -5,7 +5,7 @@ export default function TypographyPage() {
   return (
     <div className="space-y-8">
       <div>
-        <h1 className="text-xl font-semibold">Typography</h1>
+        <h1 className="text-2xl font-semibold">Typography</h1>
         <p className="text-sm text-muted-foreground mt-1">
           Notion text scale and content block styles.
         </p>

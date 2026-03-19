@@ -1,56 +1,29 @@
-import { Badge } from "@/components/ui/badge";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-
-const sections = [
-  { title: "Buttons", href: "/buttons", desc: "All button variants and sizes" },
-  { title: "Forms", href: "/forms", desc: "Inputs, selects, checkboxes, switches" },
-  { title: "Typography", href: "/typography", desc: "Headings, body, captions, and Notion content styles" },
-  { title: "Surfaces", href: "/surfaces", desc: "Cards, badges, separators, avatars" },
-  { title: "Feedback", href: "/feedback", desc: "Progress, tabs, tooltips" },
-  { title: "Icons", href: "/icons", desc: "Searchable NDS icon grid — 415 icons × 4 variants" },
-];
-
 export default function OverviewPage() {
   return (
-    <div className="space-y-8">
+    <div className="space-y-6 max-w-xl">
       <div>
-        <h1 className="text-2xl font-semibold text-foreground">notion-shadcn</h1>
-        <p className="text-muted-foreground mt-1">
-          Notion design system tokens applied to shadcn/ui components.
+        <h1 className="text-2xl font-semibold">Notion shadcn Theme</h1>
+        <p className="mt-1">
+          A theme that brings the Notion product look and feel to shadcn/ui.
         </p>
-        <div className="flex gap-2 mt-3">
-          <Badge variant="secondary">Tailwind v4</Badge>
-          <Badge variant="secondary">shadcn/ui</Badge>
-          <Badge variant="secondary">Auto dark mode</Badge>
-        </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-3">
-        {sections.map((s) => (
-          <a key={s.href} href={s.href}>
-            <Card className="hover:bg-accent transition-colors cursor-pointer h-full">
-              <CardHeader>
-                <CardTitle>{s.title}</CardTitle>
-                <CardDescription>{s.desc}</CardDescription>
-              </CardHeader>
-            </Card>
-          </a>
-        ))}
-      </div>
+      <p>
+        This repository contains official theme tokens, styles, and example components used in Notion projects.
+        It's optimized for Notion's own surfaces and for apps built with Notion's agents and system of record,
+        but it's also available for anyone who wants to build Notion‑adjacent experiences.
+      </p>
 
-      <div className="rounded-sm border border-border bg-muted/50 p-4 text-sm">
-        <p className="font-medium text-foreground mb-1">Installation</p>
-        <pre className="text-muted-foreground font-mono text-xs">
-{`pnpm add notion-shadcn
-
-# globals.css
-@import "notion-shadcn/theme.css";
-
-# React
-import { Icon } from "notion-shadcn/icons"
-import { addSquareRoundedIcon } from "notion-shadcn/icons"
-<Icon icon={addSquareRoundedIcon} size="sm" color="primary" />`}
-        </pre>
+      <div>
+        <h2 className="font-semibold mb-2">Intended use</h2>
+        <p className="mb-3">This theme is designed for:</p>
+        <ul className="space-y-1 list-disc list-inside">
+          <li>Notion‑owned products and experiments.</li>
+          <li>First‑ and third‑party apps that integrate with Notion, including agents and tooling that use Notion as a system of record.</li>
+        </ul>
+        <p className="mt-3">
+          You're welcome to use it in other projects, but please don't repackage it as a standalone theme library, template pack, or design kit.
+        </p>
       </div>
     </div>
   );
