@@ -1,0 +1,402 @@
+@import "./palette.css";
+
+/*
+ * notion-shadcn — Notion design tokens mapped to shadcn/ui CSS variables
+ *
+ * Usage in your globals.css:
+ *   @import "notion-shadcn/theme.css";
+ *
+ * Requires `color-scheme: light dark` on :root (included below).
+ * Works with Tailwind CSS v4 + shadcn/ui out of the box.
+ */
+
+:root {
+  color-scheme: light dark;
+}
+
+/* ============================================================
+   Notion Semantic Tokens
+   ============================================================ */
+
+:root {
+  /* Typography scale */
+  --notion-text-title-xl: 26px;
+  --notion-text-title-lg: 22px;
+  --notion-text-title: 20px;
+  --notion-text-title-sm: 17px;
+  --notion-text-body-lg: 16px;
+  --notion-text-body: 14px;
+  --notion-text-body-sm: 13px;
+  --notion-text-caption: 12px;
+  --notion-text-caption-sm: 10px;
+
+  /* Neutral text colors */
+  --text-color-primary: light-dark(var(--palette-gray-130), var(--palette-gray-20));
+  --text-color-secondary: light-dark(var(--palette-gray-90), var(--palette-gray-60));
+  --text-color-tertiary: light-dark(var(--palette-gray-60), var(--palette-gray-90));
+  --text-color-disabled: light-dark(var(--palette-gray-40), var(--palette-gray-110));
+  --text-color-accent-primary: light-dark(var(--palette-gray-80), var(--palette-gray-80));
+  --text-color-inverse-primary: light-dark(var(--palette-gray-20), var(--palette-gray-20));
+  --text-color-inverse-secondary: light-dark(var(--palette-gray-60), var(--palette-gray-60));
+
+  /* Neutral icon colors */
+  --icon-color-primary: light-dark(var(--palette-gray-110), var(--palette-gray-30));
+  --icon-color-secondary: light-dark(var(--palette-gray-80), var(--palette-gray-60));
+  --icon-color-tertiary: light-dark(var(--palette-gray-60), var(--palette-gray-90));
+  --icon-color-disabled: light-dark(var(--palette-gray-40), var(--palette-gray-110));
+  --icon-color-accent-primary: light-dark(var(--palette-gray-100), var(--palette-gray-80));
+  --icon-color-inverse-primary: light-dark(var(--palette-gray-20), var(--palette-gray-20));
+  --icon-color-inverse-secondary: light-dark(var(--palette-gray-60), var(--palette-gray-60));
+
+  /* Neutral border colors */
+  --border-color-primary: light-dark(var(--palette-gray-30), var(--palette-gray-120));
+  --border-color-primary-translucent: light-dark(var(--palette-translucent-gray-30), var(--palette-translucent-gray-120));
+  --border-color-secondary: light-dark(var(--palette-gray-20), var(--palette-gray-130));
+  --border-color-secondary-translucent: light-dark(var(--palette-translucent-gray-20), var(--palette-translucent-gray-130));
+  --border-color-inverse-primary: light-dark(var(--palette-gray-100), var(--palette-gray-100));
+  --border-color-accent-primary: light-dark(var(--palette-gray-80), var(--palette-gray-80));
+  --border-color-strong: light-dark(var(--palette-gray-40), var(--palette-gray-100));
+
+  /* Neutral background colors */
+  --background-color-primary: light-dark(var(--palette-gray-0), var(--palette-gray-150));
+  --background-color-secondary: light-dark(var(--palette-gray-10), var(--palette-gray-140));
+  --background-color-secondary-translucent: light-dark(var(--palette-translucent-gray-10), var(--palette-translucent-gray-140));
+  --background-color-tertiary: light-dark(var(--palette-gray-20), var(--palette-gray-120));
+  --background-color-tertiary-translucent: light-dark(var(--palette-translucent-gray-20), var(--palette-translucent-gray-130));
+  --background-color-elevated: light-dark(var(--palette-gray-0), var(--palette-gray-140));
+  --background-color-accent-primary: light-dark(var(--palette-gray-130), var(--palette-gray-120));
+  --background-color-accent-secondary: light-dark(var(--palette-gray-70), var(--palette-gray-70));
+}
+
+/* ---- Gray ---- */
+:root {
+  --text-color-gray-primary: light-dark(var(--palette-gray-110), var(--palette-gray-30));
+  --text-color-gray-secondary: light-dark(var(--palette-gray-90), var(--palette-gray-90));
+  --text-color-gray-tertiary: light-dark(var(--palette-gray-60), var(--palette-gray-100));
+  --text-color-gray-inverse-primary: light-dark(var(--palette-gray-10), var(--palette-gray-10));
+  --icon-color-gray-primary: light-dark(var(--palette-gray-130), var(--palette-gray-20));
+  --icon-color-gray-secondary: light-dark(var(--palette-gray-90), var(--palette-gray-90));
+  --icon-color-gray-tertiary: light-dark(var(--palette-gray-60), var(--palette-gray-100));
+  --border-color-gray-primary: light-dark(var(--palette-gray-30), var(--palette-gray-120));
+  --background-color-gray-primary: light-dark(var(--palette-gray-10), var(--palette-gray-140));
+  --background-color-gray-secondary: light-dark(var(--palette-gray-20), var(--palette-gray-120));
+  --background-color-gray-tertiary: light-dark(var(--palette-gray-30), var(--palette-gray-100));
+  --background-color-gray-elevated: light-dark(var(--palette-gray-0), var(--palette-gray-130));
+  --background-color-gray-accent-primary: light-dark(var(--palette-gray-80), var(--palette-gray-80));
+}
+
+/* ---- Red ---- */
+:root {
+  --text-color-red-primary: light-dark(var(--palette-red-110), var(--palette-red-20));
+  --text-color-red-secondary: light-dark(var(--palette-red-90), var(--palette-red-90));
+  --icon-color-red-primary: light-dark(var(--palette-red-110), var(--palette-red-20));
+  --icon-color-red-secondary: light-dark(var(--palette-red-90), var(--palette-red-60));
+  --border-color-red-primary: light-dark(var(--palette-red-30), var(--palette-red-120));
+  --background-color-red-primary: light-dark(var(--palette-red-10), var(--palette-red-140));
+  --background-color-red-secondary: light-dark(var(--palette-red-20), var(--palette-red-120));
+  --background-color-red-tertiary: light-dark(var(--palette-red-30), var(--palette-red-100));
+  --background-color-red-elevated: light-dark(var(--palette-red-0), var(--palette-red-130));
+  --background-color-red-accent-primary: light-dark(var(--palette-red-80), var(--palette-red-80));
+  --background-color-red-accent-secondary: light-dark(var(--palette-red-70), var(--palette-red-80));
+}
+
+/* ---- Orange ---- */
+:root {
+  --text-color-orange-primary: light-dark(var(--palette-orange-110), var(--palette-orange-20));
+  --icon-color-orange-primary: light-dark(var(--palette-orange-110), var(--palette-orange-20));
+  --icon-color-orange-secondary: light-dark(var(--palette-orange-90), var(--palette-orange-60));
+  --border-color-orange-primary: light-dark(var(--palette-orange-30), var(--palette-orange-120));
+  --background-color-orange-primary: light-dark(var(--palette-orange-10), var(--palette-orange-140));
+  --background-color-orange-secondary: light-dark(var(--palette-orange-20), var(--palette-orange-120));
+  --background-color-orange-accent-primary: light-dark(var(--palette-orange-80), var(--palette-orange-80));
+}
+
+/* ---- Yellow ---- */
+:root {
+  --text-color-yellow-primary: light-dark(var(--palette-yellow-110), var(--palette-yellow-20));
+  --icon-color-yellow-primary: light-dark(var(--palette-yellow-110), var(--palette-yellow-20));
+  --icon-color-yellow-secondary: light-dark(var(--palette-yellow-90), var(--palette-yellow-60));
+  --border-color-yellow-primary: light-dark(var(--palette-yellow-30), var(--palette-yellow-120));
+  --background-color-yellow-primary: light-dark(var(--palette-yellow-10), var(--palette-yellow-140));
+  --background-color-yellow-secondary: light-dark(var(--palette-yellow-20), var(--palette-yellow-120));
+  --background-color-yellow-accent-primary: light-dark(var(--palette-yellow-80), var(--palette-yellow-80));
+}
+
+/* ---- Green ---- */
+:root {
+  --text-color-green-primary: light-dark(var(--palette-green-110), var(--palette-green-20));
+  --icon-color-green-primary: light-dark(var(--palette-green-110), var(--palette-green-20));
+  --icon-color-green-secondary: light-dark(var(--palette-green-90), var(--palette-green-60));
+  --border-color-green-primary: light-dark(var(--palette-green-30), var(--palette-green-120));
+  --background-color-green-primary: light-dark(var(--palette-green-10), var(--palette-green-140));
+  --background-color-green-secondary: light-dark(var(--palette-green-20), var(--palette-green-120));
+  --background-color-green-accent-primary: light-dark(var(--palette-green-80), var(--palette-green-80));
+}
+
+/* ---- Teal ---- */
+:root {
+  --text-color-teal-primary: light-dark(var(--palette-teal-110), var(--palette-teal-20));
+  --icon-color-teal-primary: light-dark(var(--palette-teal-110), var(--palette-teal-20));
+  --icon-color-teal-secondary: light-dark(var(--palette-teal-90), var(--palette-teal-60));
+  --border-color-teal-primary: light-dark(var(--palette-teal-30), var(--palette-teal-120));
+  --background-color-teal-primary: light-dark(var(--palette-teal-10), var(--palette-teal-140));
+  --background-color-teal-secondary: light-dark(var(--palette-teal-20), var(--palette-teal-120));
+  --background-color-teal-accent-primary: light-dark(var(--palette-teal-80), var(--palette-teal-80));
+}
+
+/* ---- Blue ---- */
+:root {
+  --text-color-blue-primary: light-dark(var(--palette-blue-110), var(--palette-blue-20));
+  --icon-color-blue-primary: light-dark(var(--palette-blue-110), var(--palette-blue-20));
+  --icon-color-blue-secondary: light-dark(var(--palette-blue-90), var(--palette-blue-60));
+  --border-color-blue-primary: light-dark(var(--palette-blue-30), var(--palette-blue-120));
+  --background-color-blue-primary: light-dark(var(--palette-blue-10), var(--palette-blue-140));
+  --background-color-blue-secondary: light-dark(var(--palette-blue-20), var(--palette-blue-120));
+  --background-color-blue-accent-primary: light-dark(var(--palette-blue-80), var(--palette-blue-80));
+}
+
+/* ---- Purple ---- */
+:root {
+  --text-color-purple-primary: light-dark(var(--palette-purple-110), var(--palette-purple-20));
+  --icon-color-purple-primary: light-dark(var(--palette-purple-110), var(--palette-purple-20));
+  --icon-color-purple-secondary: light-dark(var(--palette-purple-90), var(--palette-purple-90));
+  --border-color-purple-primary: light-dark(var(--palette-purple-30), var(--palette-purple-120));
+  --background-color-purple-primary: light-dark(var(--palette-purple-10), var(--palette-purple-140));
+  --background-color-purple-secondary: light-dark(var(--palette-purple-20), var(--palette-purple-120));
+  --background-color-purple-accent-primary: light-dark(var(--palette-purple-80), var(--palette-purple-80));
+}
+
+/* ---- Pink ---- */
+:root {
+  --text-color-pink-primary: light-dark(var(--palette-pink-110), var(--palette-pink-20));
+  --icon-color-pink-primary: light-dark(var(--palette-pink-110), var(--palette-pink-20));
+  --icon-color-pink-secondary: light-dark(var(--palette-pink-90), var(--palette-pink-60));
+  --border-color-pink-primary: light-dark(var(--palette-pink-30), var(--palette-pink-120));
+  --background-color-pink-primary: light-dark(var(--palette-pink-10), var(--palette-pink-140));
+  --background-color-pink-secondary: light-dark(var(--palette-pink-20), var(--palette-pink-120));
+  --background-color-pink-accent-primary: light-dark(var(--palette-pink-80), var(--palette-pink-80));
+}
+
+/* ---- Brown ---- */
+:root {
+  --text-color-brown-primary: light-dark(var(--palette-brown-110), var(--palette-brown-20));
+  --icon-color-brown-primary: light-dark(var(--palette-brown-110), var(--palette-brown-20));
+  --icon-color-brown-secondary: light-dark(var(--palette-brown-90), var(--palette-brown-60));
+  --border-color-brown-primary: light-dark(var(--palette-brown-30), var(--palette-brown-120));
+  --background-color-brown-primary: light-dark(var(--palette-brown-10), var(--palette-brown-140));
+  --background-color-brown-secondary: light-dark(var(--palette-brown-20), var(--palette-brown-120));
+  --background-color-brown-accent-primary: light-dark(var(--palette-brown-80), var(--palette-brown-80));
+}
+
+/* ---- Shadows ---- */
+:root {
+  --shadow-sm:
+    0px 4px 12px 0px rgba(25, 25, 25, 0.029),
+    0px 1px 2px 0px rgba(25, 25, 25, 0.019);
+  --shadow-sm-outline:
+    0px 2px 4px 0px rgba(0, 0, 0, 0.039),
+    0px 0px 0px 1px rgba(42, 28, 0, 0.07);
+  --shadow-md:
+    0px 8px 12px 0px rgba(25, 25, 25, 0.029),
+    0px 2px 6px 0px rgba(25, 25, 25, 0.029);
+  --shadow-md-outline:
+    0px 8px 12px 0px rgba(25, 25, 25, 0.029),
+    0px 2px 6px 0px rgba(25, 25, 25, 0.029),
+    0px 0px 0px 1px rgba(42, 28, 0, 0.07);
+  --shadow-lg:
+    0px 20px 24px 0px rgba(25, 25, 25, 0.05),
+    0px 5px 8px 0px rgba(25, 25, 25, 0.029);
+  --shadow-lg-outline:
+    0px 20px 24px 0px rgba(25, 25, 25, 0.05),
+    0px 5px 8px 0px rgba(25, 25, 25, 0.029),
+    0px 0px 0px 1px rgba(42, 28, 0, 0.07);
+  --shadow-diffuse: 0px 12px 32px 0px rgba(25, 25, 25, 0.029);
+  --shadow-diffuse-outline:
+    0px 12px 32px 0px rgba(25, 25, 25, 0.029),
+    0px 0px 0px 1px rgba(42, 28, 0, 0.07);
+  --shadow-scrim:
+    0px 24px 48px 0px rgba(25, 25, 25, 0.239),
+    0px 4px 12px 0px rgba(25, 25, 25, 0.14);
+  --shadow-scrim-outline:
+    0px 24px 48px 0px rgba(25, 25, 25, 0.239),
+    0px 4px 12px 0px rgba(25, 25, 25, 0.14),
+    0px 0px 0px 1px rgba(42, 28, 0, 0.07);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --shadow-sm: 0px 4px 12px 0px rgba(25, 25, 25, 0.4);
+    --shadow-md:
+      0px 8px 12px 0px rgba(25, 25, 25, 0.4),
+      0px 2px 6px 0px rgba(25, 25, 25, 0.4);
+    --shadow-lg:
+      0px 20px 24px 0px rgba(25, 25, 25, 0.4),
+      0px 5px 8px 0px rgba(25, 25, 25, 0.4);
+    --shadow-diffuse: 0px 12px 32px 0px rgba(25, 25, 25, 0.4);
+    --shadow-scrim:
+      0px 24px 48px 0px rgba(25, 25, 25, 0.639),
+      0px 4px 12px 0px rgba(25, 25, 25, 0.56);
+    --shadow-sm-outline:
+      0px 4px 12px 0px rgba(25, 25, 25, 0.4),
+      inset 0px 0px 0px 1px rgba(253, 253, 253, 0.074);
+    --shadow-md-outline:
+      0px 8px 12px 0px rgba(25, 25, 25, 0.4),
+      0px 2px 6px 0px rgba(25, 25, 25, 0.4),
+      inset 0px 0px 0px 1px rgba(253, 253, 253, 0.074);
+    --shadow-lg-outline:
+      0px 20px 24px 0px rgba(25, 25, 25, 0.4),
+      0px 5px 8px 0px rgba(25, 25, 25, 0.4),
+      inset 0px 0px 0px 1px rgba(253, 253, 253, 0.074);
+    --shadow-diffuse-outline:
+      0px 12px 32px 0px rgba(25, 25, 25, 0.4),
+      inset 0px 0px 0px 1px rgba(253, 253, 253, 0.074);
+    --shadow-scrim-outline:
+      0px 24px 48px 0px rgba(25, 25, 25, 0.639),
+      0px 4px 12px 0px rgba(25, 25, 25, 0.56),
+      inset 0px 0px 0px 1px rgba(253, 253, 253, 0.074);
+  }
+}
+
+/* ============================================================
+   shadcn/ui CSS Variable Bridge
+   Maps Notion tokens → shadcn expected var names
+   ============================================================ */
+
+:root {
+  --background: var(--background-color-primary);
+  --foreground: var(--text-color-primary);
+
+  --card: var(--background-color-elevated);
+  --card-foreground: var(--text-color-primary);
+
+  --popover: var(--background-color-elevated);
+  --popover-foreground: var(--text-color-primary);
+
+  --primary: var(--background-color-accent-primary);
+  --primary-foreground: var(--text-color-inverse-primary);
+
+  --secondary: var(--background-color-secondary);
+  --secondary-foreground: var(--text-color-primary);
+
+  --muted: var(--background-color-secondary);
+  --muted-foreground: var(--text-color-tertiary);
+
+  --accent: var(--background-color-tertiary);
+  --accent-foreground: var(--text-color-primary);
+
+  --destructive: var(--background-color-red-accent-primary);
+  --destructive-foreground: var(--text-color-inverse-primary);
+
+  --border: var(--border-color-primary);
+  --input: var(--border-color-primary);
+  --ring: var(--border-color-accent-primary);
+
+  --chart-1: var(--background-color-blue-accent-primary);
+  --chart-2: var(--background-color-green-accent-primary);
+  --chart-3: var(--background-color-orange-accent-primary);
+  --chart-4: var(--background-color-purple-accent-primary);
+  --chart-5: var(--background-color-red-accent-primary);
+
+  --radius: 6px;
+
+  --sidebar: var(--background-color-secondary);
+  --sidebar-foreground: var(--text-color-primary);
+  --sidebar-primary: var(--background-color-accent-primary);
+  --sidebar-primary-foreground: var(--text-color-inverse-primary);
+  --sidebar-accent: var(--background-color-tertiary);
+  --sidebar-accent-foreground: var(--text-color-primary);
+  --sidebar-border: var(--border-color-primary);
+  --sidebar-ring: var(--border-color-accent-primary);
+}
+
+/* ============================================================
+   Tailwind v4 @theme inline — registers shadcn vars as
+   Tailwind color/radius utilities (bg-background, etc.)
+   ============================================================ */
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 2px);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+/* ============================================================
+   Notion Content Typography Utilities
+   ============================================================ */
+
+.content-page-title {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.content-h1 {
+  font-size: 30px;
+  line-height: 39px;
+  font-weight: 600;
+}
+
+.content-h2 {
+  font-size: 24px;
+  line-height: 31.2px;
+  font-weight: 600;
+}
+
+.content-h3 {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+}
+
+.content-text-block {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.content-text-block-bold {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.content-simple-table-text {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}

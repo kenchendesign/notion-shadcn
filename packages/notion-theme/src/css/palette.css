@@ -1,0 +1,292 @@
+:root {
+  /* Gray */
+  /* */
+  --palette-gray-0: rgba(255, 255, 255, 1);
+  --palette-gray-10: rgba(249, 248, 247, 1);
+  --palette-gray-20: rgba(240, 239, 237, 1);
+  --palette-gray-30: rgba(230, 229, 227, 1);
+  --palette-gray-40: rgba(212, 211, 207, 1);
+  --palette-gray-50: rgba(188, 186, 182, 1);
+  --palette-gray-60: rgba(168, 164, 156, 1);
+  --palette-gray-70: rgba(152, 149, 144, 1);
+  --palette-gray-80: rgba(142, 139, 134, 1);
+  --palette-gray-90: rgba(134, 131, 126, 1);
+  --palette-gray-100: rgba(95, 94, 89, 1);
+  --palette-gray-110: rgba(73, 72, 70, 1);
+  --palette-gray-120: rgba(48, 48, 46, 1);
+  --palette-gray-130: rgba(44, 44, 43, 1);
+  --palette-gray-140: rgba(32, 32, 32, 1);
+  --palette-gray-150: rgba(25, 25, 25, 1);
+
+  /* Red */
+  --palette-red-0: rgba(255, 255, 255, 1);
+  --palette-red-10: rgba(253, 246, 246, 1);
+  --palette-red-20: rgba(252, 233, 231, 1);
+  --palette-red-30: rgba(247, 217, 213, 1);
+  --palette-red-40: rgba(240, 197, 190, 1);
+  --palette-red-50: rgba(224, 174, 166, 1);
+  --palette-red-60: rgba(208, 152, 141, 1);
+  --palette-red-70: rgba(233, 115, 102, 1);
+  --palette-red-80: rgba(229, 100, 88, 1);
+  --palette-red-90: rgba(207, 81, 72, 1);
+  --palette-red-100: rgba(146, 73, 67, 1);
+  --palette-red-110: rgba(109, 53, 49, 1);
+  --palette-red-120: rgba(80, 44, 41, 1);
+  --palette-red-130: rgba(65, 39, 37, 1);
+  --palette-red-140: rgba(36, 29, 29, 1);
+  --palette-red-150: rgba(28, 25, 24, 1);
+
+  /* Orange */
+  --palette-orange-0: rgba(255, 255, 255, 1);
+  --palette-orange-10: rgba(252, 247, 244, 1);
+  --palette-orange-20: rgba(251, 235, 222, 1);
+  --palette-orange-30: rgba(243, 221, 203, 1);
+  --palette-orange-40: rgba(234, 204, 178, 1);
+  --palette-orange-50: rgba(218, 183, 152, 1);
+  --palette-orange-60: rgba(203, 162, 125, 1);
+  --palette-orange-70: rgba(222, 146, 85, 1);
+  --palette-orange-80: rgba(213, 128, 59, 1);
+  --palette-orange-90: rgba(210, 123, 45, 1);
+  --palette-orange-100: rgba(136, 82, 47, 1);
+  --palette-orange-110: rgba(106, 66, 34, 1);
+  --palette-orange-120: rgba(83, 54, 31, 1);
+  --palette-orange-130: rgba(61, 42, 29, 1);
+  --palette-orange-140: rgba(35, 30, 27, 1);
+  --palette-orange-150: rgba(27, 25, 23, 1);
+
+  /* Yellow */
+  --palette-yellow-0: rgba(255, 255, 255, 1);
+  --palette-yellow-10: rgba(252, 250, 239, 1);
+  --palette-yellow-20: rgba(249, 243, 220, 1);
+  --palette-yellow-30: rgba(242, 227, 183, 1);
+  --palette-yellow-40: rgba(232, 212, 151, 1);
+  --palette-yellow-50: rgba(226, 202, 136, 1);
+  --palette-yellow-60: rgba(216, 194, 131, 1);
+  --palette-yellow-70: rgba(234, 194, 107, 1);
+  --palette-yellow-80: rgba(216, 163, 47, 1);
+  --palette-yellow-90: rgba(203, 148, 52, 1);
+  --palette-yellow-100: rgba(131, 100, 38, 1);
+  --palette-yellow-110: rgba(101, 81, 33, 1);
+  --palette-yellow-120: rgba(80, 68, 37, 1);
+  --palette-yellow-130: rgba(55, 51, 37, 1);
+  --palette-yellow-140: rgba(35, 34, 26, 1);
+  --palette-yellow-150: rgba(27, 27, 22, 1);
+
+  /* Green */
+  --palette-green-0: rgba(255, 255, 255, 1);
+  --palette-green-10: rgba(246, 249, 247, 1);
+  --palette-green-20: rgba(232, 241, 236, 1);
+  --palette-green-30: rgba(215, 230, 221, 1);
+  --palette-green-40: rgba(190, 217, 201, 1);
+  --palette-green-50: rgba(166, 199, 180, 1);
+  --palette-green-60: rgba(139, 183, 157, 1);
+  --palette-green-70: rgba(114, 188, 143, 1);
+  --palette-green-80: rgba(70, 161, 113, 1);
+  --palette-green-90: rgba(80, 148, 110, 1);
+  --palette-green-100: rgba(55, 103, 76, 1);
+  --palette-green-110: rgba(42, 83, 60, 1);
+  --palette-green-120: rgba(38, 61, 48, 1);
+  --palette-green-130: rgba(36, 52, 43, 1);
+  --palette-green-140: rgba(27, 33, 29, 1);
+  --palette-green-150: rgba(23, 27, 23, 1);
+
+  /* Teal */
+  --palette-teal-0: rgba(255, 255, 255, 1);
+  --palette-teal-10: rgba(243, 250, 251, 1);
+  --palette-teal-20: rgba(224, 243, 247, 1);
+  --palette-teal-30: rgba(202, 233, 240, 1);
+  --palette-teal-40: rgba(176, 219, 228, 1);
+  --palette-teal-50: rgba(153, 200, 211, 1);
+  --palette-teal-60: rgba(126, 182, 194, 1);
+  --palette-teal-70: rgba(79, 185, 201, 1);
+  --palette-teal-80: rgba(55, 164, 180, 1);
+  --palette-teal-90: rgba(44, 139, 158, 1);
+  --palette-teal-100: rgba(34, 100, 113, 1);
+  --palette-teal-110: rgba(24, 80, 91, 1);
+  --palette-teal-120: rgba(20, 61, 69, 1);
+  --palette-teal-130: rgba(25, 52, 57, 1);
+  --palette-teal-140: rgba(23, 33, 36, 1);
+  --palette-teal-150: rgba(20, 26, 28, 1);
+
+  /* Blue */
+  --palette-blue-0: rgba(255, 255, 255, 1);
+  --palette-blue-10: rgba(244, 249, 252, 1);
+  --palette-blue-20: rgba(232, 242, 250, 1);
+  --palette-blue-30: rgba(211, 228, 241, 1);
+  --palette-blue-40: rgba(189, 213, 235, 1);
+  --palette-blue-50: rgba(166, 193, 221, 1);
+  --palette-blue-60: rgba(142, 173, 207, 1);
+  --palette-blue-70: rgba(94, 159, 232, 1);
+  --palette-blue-80: rgba(39, 131, 222, 1);
+  --palette-blue-90: rgba(63, 126, 190, 1);
+  --palette-blue-100: rgba(53, 95, 139, 1);
+  --palette-blue-110: rgba(38, 74, 114, 1);
+  --palette-blue-120: rgba(35, 56, 80, 1);
+  --palette-blue-130: rgba(33, 48, 65, 1);
+  --palette-blue-140: rgba(26, 32, 39, 1);
+  --palette-blue-150: rgba(23, 26, 29, 1);
+
+  /* Purple */
+  --palette-purple-0: rgba(255, 255, 255, 1);
+  --palette-purple-10: rgba(250, 247, 252, 1);
+  --palette-purple-20: rgba(243, 235, 249, 1);
+  --palette-purple-30: rgba(232, 219, 242, 1);
+  --palette-purple-40: rgba(219, 200, 232, 1);
+  --palette-purple-50: rgba(199, 179, 213, 1);
+  --palette-purple-60: rgba(180, 156, 198, 1);
+  --palette-purple-70: rgba(191, 142, 218, 1);
+  --palette-purple-80: rgba(181, 119, 214, 1);
+  --palette-purple-90: rgba(154, 107, 180, 1);
+  --palette-purple-100: rgba(103, 77, 123, 1);
+  --palette-purple-110: rgba(85, 59, 105, 1);
+  --palette-purple-120: rgba(60, 45, 71, 1);
+  --palette-purple-130: rgba(54, 41, 63, 1);
+  --palette-purple-140: rgba(34, 29, 37, 1);
+  --palette-purple-150: rgba(27, 24, 29, 1);
+
+  /* Pink */
+  --palette-pink-0: rgba(255, 255, 255, 1);
+  --palette-pink-10: rgba(252, 247, 249, 1);
+  --palette-pink-20: rgba(250, 233, 241, 1);
+  --palette-pink-30: rgba(244, 216, 228, 1);
+  --palette-pink-40: rgba(234, 196, 213, 1);
+  --palette-pink-50: rgba(216, 175, 193, 1);
+  --palette-pink-60: rgba(200, 151, 173, 1);
+  --palette-pink-70: rgba(223, 132, 168, 1);
+  --palette-pink-80: rgba(219, 105, 153, 1);
+  --palette-pink-90: rgba(193, 76, 138, 1);
+  --palette-pink-100: rgba(123, 71, 96, 1);
+  --palette-pink-110: rgba(104, 53, 78, 1);
+  --palette-pink-120: rgba(78, 43, 60, 1);
+  --palette-pink-130: rgba(63, 38, 49, 1);
+  --palette-pink-140: rgba(38, 28, 32, 1);
+  --palette-pink-150: rgba(29, 23, 26, 1);
+
+  /* Brown */
+  --palette-brown-0: rgba(255, 255, 255, 1);
+  --palette-brown-10: rgba(250, 248, 246, 1);
+  --palette-brown-20: rgba(245, 237, 233, 1);
+  --palette-brown-30: rgba(235, 223, 215, 1);
+  --palette-brown-40: rgba(224, 205, 192, 1);
+  --palette-brown-50: rgba(207, 184, 168, 1);
+  --palette-brown-60: rgba(188, 162, 144, 1);
+  --palette-brown-70: rgba(189, 149, 118, 1);
+  --palette-brown-80: rgba(182, 137, 101, 1);
+  --palette-brown-90: rgba(159, 118, 90, 1);
+  --palette-brown-100: rgba(109, 83, 64, 1);
+  --palette-brown-110: rgba(88, 68, 55, 1);
+  --palette-brown-120: rgba(69, 54, 45, 1);
+  --palette-brown-130: rgba(56, 45, 38, 1);
+  --palette-brown-140: rgba(37, 32, 29, 1);
+  --palette-brown-150: rgba(28, 24, 22, 1);
+
+  /* Translucent Blue */
+  --palette-translucent-blue-10: rgba(3, 118, 186, 0.043);
+  --palette-translucent-blue-20: rgba(0, 111, 200, 0.09);
+  --palette-translucent-blue-30: rgba(0, 99, 174, 0.172);
+  --palette-translucent-blue-40: rgba(0, 93, 178, 0.258);
+  --palette-translucent-blue-100: rgba(81, 166, 255, 0.495);
+  --palette-translucent-blue-110: rgba(59, 152, 255, 0.386);
+  --palette-translucent-blue-120: rgba(67, 155, 255, 0.239);
+  --palette-translucent-blue-130: rgba(71, 157, 255, 0.173);
+  --palette-translucent-blue-140: rgba(41, 139, 253, 0.061);
+
+  /* Translucent Brown */
+  --palette-translucent-brown-10: rgba(115, 59, 3, 0.035);
+  --palette-translucent-brown-20: rgba(139, 46, 0, 0.086);
+  --palette-translucent-brown-30: rgba(127, 51, 0, 0.156);
+  --palette-translucent-brown-40: rgba(129, 52, 0, 0.246);
+  --palette-translucent-brown-100: rgba(255, 184, 132, 0.365);
+  --palette-translucent-brown-110: rgba(255, 182, 135, 0.273);
+  --palette-translucent-brown-120: rgba(255, 177, 129, 0.191);
+  --palette-translucent-brown-130: rgba(255, 174, 122, 0.134);
+  --palette-translucent-brown-140: rgba(253, 158, 101, 0.052);
+
+  /* Translucent Gray */
+  --palette-translucent-gray-10: rgba(66, 35, 3, 0.031);
+  --palette-translucent-gray-20: rgba(42, 28, 0, 0.07);
+  --palette-translucent-gray-30: rgba(28, 19, 1, 0.11);
+  --palette-translucent-gray-40: rgba(27, 21, 0, 0.188);
+  --palette-translucent-gray-100: rgba(255, 252, 235, 0.304);
+  --palette-translucent-gray-110: rgba(254, 250, 240, 0.209);
+  --palette-translucent-gray-120: rgba(255, 255, 235, 0.1);
+  --palette-translucent-gray-130: rgba(255, 255, 243, 0.082);
+  --palette-translucent-gray-140: rgba(252, 252, 252, 0.03);
+
+  /* Translucent Green */
+  --palette-translucent-green-10: rgba(3, 87, 31, 0.035);
+  --palette-translucent-green-20: rgba(0, 100, 45, 0.09);
+  --palette-translucent-green-30: rgba(0, 96, 38, 0.156);
+  --palette-translucent-green-40: rgba(0, 106, 43, 0.254);
+  --palette-translucent-green-100: rgba(113, 255, 175, 0.339);
+  --palette-translucent-green-110: rgba(93, 255, 164, 0.251);
+  --palette-translucent-green-120: rgba(108, 255, 172, 0.156);
+  --palette-translucent-green-130: rgba(119, 255, 179, 0.117);
+  --palette-translucent-green-140: rgba(83, 255, 140, 0.034);
+
+  /* Translucent Orange */
+  --palette-translucent-orange-10: rgba(186, 72, 3, 0.043);
+  --palette-translucent-orange-20: rgba(224, 101, 1, 0.129);
+  --palette-translucent-orange-30: rgba(196, 88, 0, 0.203);
+  --palette-translucent-orange-40: rgba(186, 86, 0, 0.302);
+  --palette-translucent-orange-100: rgba(255, 143, 71, 0.482);
+  --palette-translucent-orange-110: rgba(187, 107, 43, 0.5);
+  --palette-translucent-orange-120: rgba(255, 147, 75, 0.278);
+  --palette-translucent-orange-130: rgba(255, 134, 51, 0.156);
+  --palette-translucent-orange-140: rgba(254, 139, 71, 0.043);
+
+  /* Translucent Pink */
+  --palette-translucent-pink-10: rgba(161, 3, 66, 0.031);
+  --palette-translucent-pink-20: rgba(197, 0, 93, 0.086);
+  --palette-translucent-pink-30: rgba(183, 0, 78, 0.152);
+  --palette-translucent-pink-40: rgba(164, 0, 73, 0.231);
+  --palette-translucent-pink-100: rgba(255, 133, 192, 0.426);
+  --palette-translucent-pink-110: rgba(255, 107, 180, 0.342);
+  --palette-translucent-pink-120: rgba(255, 103, 177, 0.23);
+  --palette-translucent-pink-130: rgba(255, 104, 171, 0.164);
+  --palette-translucent-pink-140: rgba(255, 78, 149, 0.056);
+
+  /* Translucent Purple */
+  --palette-translucent-purple-10: rgba(98, 3, 161, 0.031);
+  --palette-translucent-purple-20: rgba(102, 0, 178, 0.078);
+  --palette-translucent-purple-30: rgba(92, 0, 163, 0.141);
+  --palette-translucent-purple-40: rgba(88, 1, 149, 0.216);
+  --palette-translucent-purple-100: rgba(208, 147, 255, 0.426);
+  --palette-translucent-purple-110: rgba(197, 123, 255, 0.347);
+  --palette-translucent-purple-120: rgba(200, 125, 255, 0.2);
+  --palette-translucent-purple-130: rgba(201, 122, 255, 0.164);
+  --palette-translucent-purple-140: rgba(196, 101, 253, 0.052);
+
+  /* Translucent Red */
+  --palette-translucent-red-10: rgba(199, 3, 3, 0.035);
+  --palette-translucent-red-20: rgba(223, 22, 0, 0.094);
+  --palette-translucent-red-30: rgba(206, 24, 0, 0.164);
+  --palette-translucent-red-40: rgba(196, 27, 0, 0.254);
+  --palette-translucent-red-100: rgba(255, 116, 105, 0.526);
+  --palette-translucent-red-110: rgba(255, 102, 91, 0.364);
+  --palette-translucent-red-120: rgba(255, 104, 92, 0.239);
+  --palette-translucent-red-130: rgba(255, 106, 94, 0.173);
+  --palette-translucent-red-140: rgba(251, 107, 107, 0.048);
+
+  /* Translucent Teal */
+  --palette-translucent-teal-10: rgba(3, 150, 171, 0.047);
+  --palette-translucent-teal-20: rgba(1, 157, 189, 0.122);
+  --palette-translucent-teal-30: rgba(0, 149, 183, 0.207);
+  --palette-translucent-teal-40: rgba(0, 139, 168, 0.309);
+  --palette-translucent-teal-100: rgba(49, 221, 255, 0.382);
+  --palette-translucent-teal-110: rgba(22, 217, 255, 0.286);
+  --palette-translucent-teal-120: rgba(0, 205, 245, 0.2);
+  --palette-translucent-teal-130: rgba(25, 219, 255, 0.138);
+  --palette-translucent-teal-140: rgba(0, 126, 164, 0.079);
+
+  /* Translucent Yellow */
+  --palette-translucent-yellow-10: rgba(207, 175, 0, 0.062);
+  --palette-translucent-yellow-20: rgba(211, 168, 0, 0.137);
+  --palette-translucent-yellow-30: rgba(209, 156, 0, 0.282);
+  --palette-translucent-yellow-40: rgba(199, 150, 0, 0.407);
+  --palette-translucent-yellow-100: rgba(255, 188, 53, 0.46);
+  --palette-translucent-yellow-110: rgba(255, 194, 49, 0.33);
+  --palette-translucent-yellow-120: rgba(255, 205, 75, 0.239);
+  --palette-translucent-yellow-130: rgba(255, 225, 117, 0.13);
+  --palette-translucent-yellow-140: rgba(255, 232, 48, 0.043);
+}
