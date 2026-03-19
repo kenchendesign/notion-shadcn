@@ -1,0 +1,38 @@
+{
+  "name": "notion-shadcn",
+  "version": "0.1.0",
+  "description": "Notion design system theme for shadcn/ui",
+  "license": "MIT",
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    },
+    "./theme.css": "./theme.css",
+    "./palette.css": "./dist/palette.css",
+    "./icons": {
+      "types": "./dist/icons/index.d.mts",
+      "import": "./dist/icons/index.mjs"
+    }
+  },
+  "files": ["dist", "theme.css"],
+  "scripts": {
+    "build": "tsup && node scripts/copy-css.mjs",
+    "dev": "tsup --watch",
+    "clean": "rm -rf dist",
+    "generate:icons": "node scripts/generate-icons.mjs"
+  },
+  "peerDependencies": {
+    "react": "^18 || ^19",
+    "react-dom": "^18 || ^19"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3"
+  }
+}
