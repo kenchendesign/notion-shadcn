@@ -11,21 +11,13 @@ This repository contains official theme tokens, styles, and example components u
 1. Install the package:
 
    ```bash
-   pnpm add @notion/shadcn-theme
+   pnpm add @kenchendesign/notion-shadcn
    ```
 
 2. Wrap your app with the provided theme provider and globals:
 
    ```tsx
-   import { NotionThemeProvider } from "@notion/shadcn-theme";
-
-   export function App() {
-     return (
-       <NotionThemeProvider>
-         {/* your app */}
-       </NotionThemeProvider>
-     );
-   }
+   WIP
    ```
 
 3. Use shadcn/ui components as usual. The Notion theme will handle tokens, colors, and typography.
